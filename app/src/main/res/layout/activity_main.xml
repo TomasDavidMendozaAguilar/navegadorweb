@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:text="Navegador Web"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Dirección URL"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="24dp"
+            android:background="#3F51B5"
+            android:text="Buscar" />
+
+        <WebView
+            android:id="@+id/webVer"
+            android:layout_width="409dp"
+            android:layout_height="474dp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
